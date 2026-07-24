@@ -1,0 +1,99 @@
+# curriculum-map.yaml
+#
+# Single source of truth for all Pivot coaches and commands.
+# TODO(user): the `cka.domains` weights below are still a seeded placeholder
+# (the well-known CKA breakdown). Confirm against the current official CKA
+# curriculum before relying on this for real exam-prep pacing.
+# `ibm_rag_agentic_cert.modules` is the real 10-course syllabus from the
+# IBM_RAG_and_Agentic_AI_Certificate_Syllabus.md report.
+
+cka:
+  exam: "CKA (Certified Kubernetes Administrator)"
+  domains:
+    - name: "Cluster Architecture, Installation & Configuration"
+      weight_pct: 25
+    - name: "Workloads & Scheduling"
+      weight_pct: 15
+    - name: "Services & Networking"
+      weight_pct: 20
+    - name: "Storage"
+      weight_pct: 10
+    - name: "Troubleshooting"
+      weight_pct: 30
+
+ibm_rag_agentic_cert:
+  name: "IBM RAG and Agentic AI Professional Certificate"
+  modules:
+    - name: "Develop Generative AI Applications: Get Started"
+      hours: 10
+      topics: "GenAI app basics, environment setup, foundational LLM APIs, LangChain prompt templates"
+    - name: "Build RAG Applications: Get Started"
+      hours: 7
+      topics: "RAG core mechanics, document ingestion, embedding generation, prompt context augmentation"
+    - name: "Vector Databases for RAG: An Introduction"
+      hours: 9
+      topics: "Storing/querying vector embeddings, similarity search, vector indexing, Chroma Vector DB"
+    - name: "Advanced RAG with Vector Databases and Retrievers"
+      hours: 8
+      topics: "Advanced retrieval strategies, hybrid search, semantic re-ranking, tuning vector search accuracy"
+    - name: "Build Multimodal Generative AI Applications"
+      hours: 8
+      topics: "Text/audio/image integration, multimodal prompts, cross-modal models"
+    - name: "Fundamentals of Building AI Agents"
+      hours: 11
+      topics: "Autonomous agent concepts, tool access, decision-making loops, state management"
+    - name: "Agentic AI with LangChain and LangGraph"
+      hours: 11
+      topics: "Stateful multi-step agentic workflows, cyclical graph execution, task decomposition"
+    - name: "Agentic AI with LangGraph, CrewAI, AutoGen and BeeAI"
+      hours: 13
+      topics: "Multi-agent teams, role-based orchestration, agent interaction across frameworks"
+    - name: "Build AI Agents using MCP"
+      hours: 10
+      topics: "Model Context Protocol - standardizing tool integration and agent communication"
+    - name: "RAG and Agentic AI Capstone Project"
+      hours: 14
+      topics: "End-to-end project: advanced RAG, multi-agent frameworks, function calling, UI interfaces"
+
+swe_fundamentals:
+  sequence:
+    - "Arrays & strings"
+    - "Hashing"
+    - "Two pointers / sliding window"
+    - "Linked lists"
+    - "Stacks & queues"
+    - "Trees & BSTs"
+    - "Graphs (BFS/DFS)"
+    - "Heaps / priority queues"
+    - "Dynamic programming"
+    - "Greedy algorithms"
+    - "Code review habits (readability, edge cases, testing)"
+
+devops_mlops_project:
+  outline:
+    - "Pick a small model (e.g. scikit-learn or HF sentiment classifier)"
+    - "Containerize training + inference"
+    - "CI pipeline: lint, test, build, push image"
+    - "Deploy to a small k8s cluster (kind/minikube) or container service"
+    - "Add basic monitoring (Prometheus/Grafana or simple logging+metrics)"
+    - "Document runbook: rollback, alert response"
+
+python_fundamentals:            # self-directed, seeded by Claude
+  concepts:
+    - "Variables, types, and mutability"
+    - "Control flow (if/for/while, comprehensions)"
+    - "Functions, *args/**kwargs, closures"
+    - "OOP: classes, inheritance, dunder methods"
+    - "Decorators"
+    - "Generators & iterators"
+    - "Context managers (with statement)"
+    - "Exception handling & custom exceptions"
+    - "Modules & packaging"
+    - "Type hints & typing module"
+  libraries:
+    - "requests (HTTP)"
+    - "numpy (arrays, vectorized ops)"
+    - "pandas (dataframes)"
+    - "pytest (testing)"
+    - "asyncio (async/await, event loop)"
+    - "logging"
